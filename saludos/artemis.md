@@ -8,3 +8,5 @@ aprender cuanto mas mejor
 * **la electronica** desde pequeño me encanta cacharrear, luego de mayor vi que poca gente entendia y podia aprovecharme de ellos
 
 * **el hentai** empece iendo anime pero descubri este genero que es el que mas lo aprovecha
+
+* **las chorradas** pos eso
