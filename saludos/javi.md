@@ -10,5 +10,6 @@ Acabar la carrera
 
     * **Mitología nórdica**: Me encanta los países escandinavos y su historia, leyendas y folclore
 
+    * **La oscuridad**: Me apasiona.
 
     
