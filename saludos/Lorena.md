@@ -9,3 +9,7 @@ Espero aprender un poco sobre programación con este curso, es algo nuevo para m
    * **La moda**
 
    * **La repostería**
+
+   * **La playa**
+
+   
