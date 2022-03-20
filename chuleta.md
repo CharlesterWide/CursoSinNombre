@@ -90,3 +90,4 @@ Operacion                                 | Descripción
 ------------------------------------------|------------
 **pull request** (entre ramas)            | En la página principal del repositorio: "New pull request" y se selecciona la rama deseada
 **pull request** (entre repositorios)     | Dentro de la misma opción anterior, seleccionando: "compare across forks"
+
