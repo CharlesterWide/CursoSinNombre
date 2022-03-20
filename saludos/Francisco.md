@@ -8,5 +8,5 @@ Aprender mucho muchísimo en este curso.
 
     * **Pokemon**: Sí, lo sé... tengo ya unos añitos pero hay que disfrutar de los pequeños placeres de la vida.
 
-    * **Todo lo que sepa a cerveza**: Las rubias eh...
+    * **Todo lo que sepa a cerveza**: Las rubias eh... O NO!
 
