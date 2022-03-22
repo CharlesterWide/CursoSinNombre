@@ -90,3 +90,11 @@ Operacion                                 | Descripción
 ------------------------------------------|------------
 **pull request** (entre ramas)            | En la página principal del repositorio: "New pull request" y se selecciona la rama deseada
 **pull request** (entre repositorios)     | Dentro de la misma opción anterior, seleccionando: "compare across forks"
+
+
+**Ejemplo de tabla en marcado .md**
+| / | Titulo A | Titulo B | Titulo C | Titulo D |
+|--:|----------|----------|----------|----------|
+| 1 | cell 1,a | cell 1,b | cell 1,c | cell 1,d |
+| 2 | cell 2,a | cell 2,b | cell 2,c | cell 2,d |
+| 3 | cell 3,a | cell 3,b | cell 3,c | cell 4,d |
