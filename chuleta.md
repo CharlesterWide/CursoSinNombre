@@ -90,3 +90,32 @@ Operacion                                 | Descripción
 ------------------------------------------|------------
 **pull request** (entre ramas)            | En la página principal del repositorio: "New pull request" y se selecciona la rama deseada
 **pull request** (entre repositorios)     | Dentro de la misma opción anterior, seleccionando: "compare across forks"
+
+### 3. como se usa el formato .md (MARKDOWN)
+#### Reglas horizontales
+
+Las reglas horizontales se utilizan para separar secciones de una manera visual.
+
+Para crearlas, en una línea en blanco deberás incluir tres de los siguientes elementos: asteriscos, guiones, o guiones bajos.
+
+***
+---
+___
+
+COMANDO  MARKDOWN        | RESULTADO 
+-------------------------|------------------------------------------------
+#                        | inicia titulo, puedes añadir ## para subtitulos
+* o -                    | un solo * o - para enumerar elementos
+*xxxx*	                 | cursiva
+_xxxx_	                 | cursiva
+**xxxx**	             | negrita
+__xxxx__	             | negrita
+***xxxx***	             | cursiva y negrita
+___xxxx___           	 | cursiva y negrita
+>                        | se usa para citar 
+~                        | crea un bloque entero que contenga código
+[nombre url][url]        | crea hipervinculos tambien con ()
+`codigo`                 | entre ` para escribir lineas de codigo
+![texto si no carga][url]| ! para añadir una imagen
+<url>                    | para añadir url mostrando el enlace
+\explicaciones           | \ al principio se salta todas las normas de .MD
