@@ -90,3 +90,27 @@ Operacion                                 | Descripción
 ------------------------------------------|------------
 **pull request** (entre ramas)            | En la página principal del repositorio: "New pull request" y se selecciona la rama deseada
 **pull request** (entre repositorios)     | Dentro de la misma opción anterior, seleccionando: "compare across forks"
+
+
+## 3. Caracteres especiales
+
+Estilo               | Sintaxis                         | Descripción
+---------------------|----------------------------------|---------------
+Encabezado           | # ## ### ##### ##### ######      | Crea el encabezado, el número de asteriscos determina el tamaño
+---------------------|----------------------------------|---------------                                                      
+Negrita              | **caracteres** o __caracteres__  | Pone en negrita los caracteres entre los simbolos (** o __)          
+---------------------|----------------------------------|---------------                       
+Cursiva              | *caracteres* o _caracteres_      | Pone en cursiva los caracteres entre los simbolos (* o _)  
+---------------------|----------------------------------|---------------  
+Tachado              | Virgulilla de la ñ   **~**       | Tacha los caracteres que se encuentren entre (~~) 
+---------------------|----------------------------------|---------------  
+Cursiva y negrita    | ***caracteres***                 | Pone en negrita y cursiva los caracteres entre (*** y ***)
+---------------------|----------------------------------|---------------  
+Citar un texto       | >texto                           | Cita el texto que se encuentra tras el simbolo mayor que (>)
+---------------------|----------------------------------|---------------  
+Crear columna tabla  | simbolo (|)                      | Crea una línea vertical separando caracteres entre ellas y formar una tabla
+---------------------|----------------------------------|---------------  
+Crear fila tabla     | simbolo (-)                      | Crea una línea horizontal para separar filas de caracteres y formar una tabla
+---------------------|----------------------------------|---------------  
+Links                | [texto del link] (URL)           | Crea un link a una página, el texto entre corchetes y la URL entre parentesis
+
