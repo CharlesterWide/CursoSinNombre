@@ -98,13 +98,13 @@ Comando                                      |   Función
 **#** (Encabezado)                           | Encabezado grande.(Va precedido de una sola almohadilla)  
 **##**(Encabezado)                           | Encabezado segundo mas grande.(Va precedido de dos almohadillas)
 **####**(Encabezado)                         | Encabezado mas pequeño.(Va precedido de cuatro almohadillas)                       |
-un* un* (estilo)                             | Las palabras que queden comprendidas entre estos asteriscos aparecerán en cursiva.
-dos* dos* (estilo)                           | Las palabras que queden comprendidas entre estos dos asteriscos aparecerán en negrita.
-tres* tres* (estilo)                         | Las palabras que queden comprendidas entre estos tres asteriscos aparecerán en negrita y cursiva. 
+[*] [*] (estilo)                             | Las palabras que queden comprendidas entre estos asteriscos aparecerán en cursiva.
+[**] [**] (estilo)                           | Las palabras que queden comprendidas entre estos dos asteriscos aparecerán en negrita.
+[***] [***] (estilo)                         | Las palabras que queden comprendidas entre estos tres asteriscos aparecerán en negrita y cursiva. 
 ** _ _ ** (estilo)                           | Las palabras que queden compendidas entre los asterisco apareceran en negrita y las que quedan comprendidas entre los guiones bajos, a parte de negrita aparecerán en cursiva.
 ~~ ~~ (estilo )                              | Las palabras que van comprendidas entre los apostrofes  aparecerán tachados.                       |
 mayor(>) (citas)                             | El simbolo de mayor se utiliza para citar una frase.
 '' (citas)                                   | Las comillas simples se usan para citar comandos.                       |
 corchetes[]y parentesis()                    | Esto sirve para hacer un hipervinculo, entre los corchetes hay que poner las palabras que queremos que aparezcan como enlace y entre los parentesis la dirección a la que nos mandara.                       |
-exclamacion cierre!, cochete[]y parentesis() | Esto sirve para poner una imágen, poniendo la exclamacion lo primero, entre corchetes el texto alternativo y entre parentesis el enlace de la imágen.                       | 
+exclamacion cierre!, cochete[] y parentesis()| Esto sirve para poner una imágen, poniendo la exclamacion lo primero, entre corchetes el texto alternativo y entre parentesis el enlace de la imágen.                       | 
 *, -, número                                 | Usando cualquiera de los tres puedes crear una lista. Si dejas una sangria combinando estos simbolos se crearán listas anidadas. 
