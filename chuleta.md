@@ -98,9 +98,9 @@ Comando                |   Función
 **#** (Encabezado)     | Encabezado grande.(Va precedido de una sola almohadilla)  
 **##**(Encabezado)     | Encabezado segundo mas grande.(Va precedido de dos almohadillas)
 **####**(Encabezado)   | Encabezado mas pequeño.(Va precedido de cuatro almohadillas)                       |
-* * (estilo)           | Las palabras que queden comprendidas entre estos asteriscos aparecerán en cursiva.
-** ** (estilo)         | Las palabras que queden comprendidas entre estos dos asteriscos aparecerán en negrita.
-*** *** (estilo)       | Las palabras que queden comprendidas entre estos tres asteriscos aparecerán en negrita y cursiva. 
+*x* (estilo)           | Las palabras que queden comprendidas entre estos asteriscos aparecerán en cursiva.
+**x** (estilo)         | Las palabras que queden comprendidas entre estos dos asteriscos aparecerán en negrita.
+***x*** (estilo)       | Las palabras que queden comprendidas entre estos tres asteriscos aparecerán en negrita y cursiva. 
 ** _ _ ** (estilo)     | Las palabras que queden compendidas entre los asterisco apareceran en negrita y las que quedan comprendidas entre los guiones bajos, a parte de negrita aparecerán en cursiva.
 ~~ ~~ (estilo )        | Las palabras que van comprendidas entre los apostrofes  aparecerán tachados.                       |
 > (citas)              | El simbolo de mayor se utiliza para citar una frase.
