@@ -96,11 +96,11 @@ Operacion                                 | Descripción
 Caracter            | Función
 --------------------|--------------------
 [#]                 |Se pone antes de poner un título.
-[#][#]              |Se usa para poner título segundo, conforme se van añadiendo almohadillas el titulo es más pequeño.
-[**] [**]           |El texto que haya en medio estará en negrita.
-[*] [*]             |El texto que haya en medio estará en cursiva.
-[~~] [~~]           |El texto que haya en medio estará tachado.
-[***] [***]         |El texto que haya en medio aparecerá en negrita y cursiva.
+[##]                |Se usa para poner título segundo, conforme se van añadiendo almohadillas el titulo es más pequeño.
+[**]                |Se ponen dos al principio y dos al final y el texto que haya en medio estará en negrita.
+[*]                 |Se pone uno al principio y otro al final y el texto que haya en medio estará en cursiva.
+[~~]                |Se ponen dos al principio y dos al final y el texto que haya en medio estará tachado.
+[***]               |Se ponen 3 al principio y tres al final y el texto que haya en medio aparecerá en negrita y cursiva.
 [-]                 |Este caracter se usa para crear listas, la línea que se ponga después aparecerá desplazada, tambien se pueden usar numero para que sea una lista ordenada.
 [-] [ ]             |Se usa para crear una lista de tareas, se pone al inicio de la línea, si quieres maracar una tarea, se pone una x dentro de los corchetes.
 
