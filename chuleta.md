@@ -105,10 +105,12 @@ Los archivos en Markdown se guardan con la extensión <code class="language-plai
 
 Markdown dispone de cuatro niveles de encabezados definidos por el número de <code class="language-plaintext highlighter-rouge">#</code> antes del texto del encabezado.
 
-| #     | Primer nivel de encabezado    |
-| ##    | Segundo nivel de encabezado   |
-| ###   | Tercer nivel de encabezado    |
-| ####  | Cuarto nivel de encabezado    |
+| Caracter  | Definición                    |
+|----------:|-------------------------------|
+| #         | Primer nivel de encabezado    |
+| ##        | Segundo nivel de encabezado   |
+| ###       | Tercer nivel de encabezado    |
+| ####      | Cuarto nivel de encabezado    |
 
 #### 3.2.2 Párrafos y saltos de línea
 
