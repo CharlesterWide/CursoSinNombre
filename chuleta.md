@@ -115,17 +115,19 @@ Markdown dispone de cuatro niveles de encabezados definidos por el número de <c
 #### 3.2.2 Párrafos y saltos de línea
 
 Los párrafos son simplemente texto plano escrito sin ninguna peculiaridad propia del lenguaje, para escribir un párrafo simplemente teclea como lo haría en un archivo <code class="language-plaintext highlighter-rouge">.txt</code>. 
-
-
-
+<br>
+<br>
+<br>
 De igual modo, para un salto de línea simplemente hay que introducir un salto de línea como lo haces normalmente en cualquier editor de texto como puede ser **Microsoft Word**, pulsando el botón <code class="language-plaintext highlighter-rouge">Enter</code> de tu teclado. Este párrafo por ejemplo, tiene tres saltos de línea de separación en lugar de uno con respecto al anterior.
+
+#### 3.2.3 Negrita y cursiva
 
 El texto se puede poner en cursivas encerrándolo entre los símbolos <code class="language-plaintext highlighter-rouge">*</code> o <code class="language-plaintext highlighter-rouge">-</code>. De la misma forma, el texto en negritas se escribe encerrando la palabra entre <code class="language-plaintext highlighter-rouge">**</code> o <code class="language-plaintext highlighter-rouge">__</code>.
 
 * **Ejemplo de texto en negrita**
 * *Ejemplo de texto en cursiva*
 
-#### 3.2.3 Listados
+#### 3.2.4 Listados
 
 Markdown soporta la creación de listas ordenadas y sin ordenar.
 
@@ -143,7 +145,7 @@ Para listas ordenadas es tan sencillo como listar mediante números y un punto, 
 2. tarea 2
 3. tarea 3
 
-#### 3.2.4 Fragmentos de código
+#### 3.2.5 Fragmentos de código
 
 Dado que Markdown no distingue las tipografías involucradas los fragmentos de código se representan encerrados entre dos signos de acento grave <code class="language-plaintext highlighter-rouge">`</code>. Y cuando queramos representar un bloque completo de código lo debemos encerrar entre dos líneas de tres acentos graves. 
 
@@ -153,25 +155,25 @@ Fragmento de código
 ...
 ```
 
-#### 3.2.5 Bloques de citas
+#### 3.2.6 Bloques de citas
 
 Los bloques de citas se representan usando el caracter <code class="language-plaintext highlighter-rouge">></code> delante del párrafo que queramos convertir en un bloque de citas. Como se muestra a continuación:
 
 > Éste es un párrafo de texto incluido como un bloque de cita
 
-#### 3.2.6 Bloques de citas
+#### 3.2.7 Bloques de citas
 
 Se pueden mostrar imágenes mediante el uso del caracter <code class="language-plaintext highlighter-rouge">!</code>, seguido de un texto alternativo entre corchetes, seguido a su vez por el URL de la imagen y un título opcional entre comillas.
 
 ![Foto de ejemplo](https://media-exp1.licdn.com/dms/image/C4D03AQFNqIfFGUsLFg/profile-displayphoto-shrink_800_800/0/1574444201467?e=1654128000&v=beta&t=dmmHEevV7WN1XyVcIfAkDJ2502Rlwf5LQMDiNry8nyo "Mi foto")
 
-#### 3.2.7 Enlaces o hipertexto
+#### 3.2.8 Enlaces o hipertexto
 
 El título del enlace se encierra primero entre corchetes y después se incluye la dirección completa del URL entre paréntesis.
 
 [Mi GitHub](https://github.com/FranciscoJoseLara).
 
-#### 3.2.8 Líneas horizontales
+#### 3.2.9 Líneas horizontales
 
 Puedes incluir líneas horizontales si escribes en una misma línea cualquiera de los siguientes tres signos: <code class="language-plaintext highlighter-rouge">-</code>, <code class="language-plaintext highlighter-rouge">*</code> o <code class="language-plaintext highlighter-rouge">_</code>, sin importar los espacios que dejes entre ellos. Cualquiera de estas combinaciones generarán una línea horizontal como las siguientes:
 
@@ -179,11 +181,11 @@ Puedes incluir líneas horizontales si escribes en una misma línea cualquiera d
 ***
 ___
 
-#### 3.2.9 Tablas
+#### 3.2.10 Tablas
 
 La versión básica de Markdown no incluye tablas, sin embargo, algunos sitios web y aplicaciones usan variantes de Markdown que pueden incluir tablas y otras características especiales. Para crear una tabla en GitHub, usa barras verticales <code class="language-plaintext highlighter-rouge">|</code> para separar columnas y guiones entre los encabezados y el resto del contenido de la tabla.
 
-| /      | Encabezado A | Encabezado B |
+|        | Encabezado A | Encabezado B |
 |--------|--------------|--------------|
 | Fila 1 | 1,1          | 1,2          |
 | Fila 2 | 2,1          | 2,2          |
@@ -191,17 +193,8 @@ La versión básica de Markdown no incluye tablas, sin embargo, algunos sitios w
 
 Para especificar la alineación del contenido de cada columna se pueden agregar dos puntos <code class="language-plaintext highlighter-rouge">:</code> al renglón de los encabezados:
 
-| /      | Encabezado A | Encabezado B |
-|-------:|:------------:|:-------------|
+|        | Encabezado A | Encabezado B |
+|:-------|:------------:|-------------:|
 | Fila 1 | 1,1          | 1,2          |
 | Fila 2 | 2,1          | 2,2          |
 | Fila 3 | 3,1          | 3,2          |
-
-
-
-**Ejemplo de tabla en marcado .md**
-| / | Titulo A | Titulo B | Titulo C | Titulo D |
-|--:|----------|----------|----------|----------|
-| 1 | cell 1,a | cell 1,b | cell 1,c | cell 1,d |
-| 2 | cell 2,a | cell 2,b | cell 2,c | cell 2,d |
-| 3 | cell 3,a | cell 3,b | cell 3,c | cell 4,d |
