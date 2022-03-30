@@ -115,13 +115,13 @@ Markdown dispone de cuatro niveles de encabezados definidos por el número de <c
 #### 3.2.2 Párrafos y saltos de línea
 
 Los párrafos son simplemente texto plano escrito sin ninguna peculiaridad propia del lenguaje, para escribir un párrafo simplemente teclea como lo haría en un archivo <code class="language-plaintext highlighter-rouge">.txt</code>. 
-  
-  
-  
-  
-  
-  
-  
+     
+     
+     
+     
+     
+     
+     
 De igual modo, para un salto de línea simplemente hay que introducir un salto de línea como lo haces normalmente en cualquier editor de texto como puede ser **Microsoft Word**, pulsando el botón <code class="language-plaintext highlighter-rouge">Enter</code> de tu teclado. Este párrafo por ejemplo, tiene tres saltos de línea de separación en lugar de uno con respecto al anterior.
 
 #### 3.2.3 Negrita y cursiva
