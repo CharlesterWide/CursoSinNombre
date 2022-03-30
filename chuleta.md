@@ -93,6 +93,12 @@ Operacion                                 | Descripción
 
 ## 3. Uso del formato .md
 
+### 3.1 Definición
+
+El **Markdown** es un lenguaje de marcado con sintaxis en texto plano para generar textos con formato.
+
+Los archivos en Markdown se guardan con la extensión .md y se pueden abrir en cualquier editor de texto. <code class="language-plaintext highlighter-rouge">.md</code>
+
 **Ejemplo de tabla en marcado .md**
 | / | Titulo A | Titulo B | Titulo C | Titulo D |
 |--:|----------|----------|----------|----------|
