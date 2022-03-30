@@ -108,8 +108,7 @@ Comando           | ¿Qué añado?                              | Comentario
 \~~~              | Crear un bloque que contenga código      | Se encierra el párrafo entre dos líneas formadas por tres virgilillas.
 ***  ---  ___     | Las reglas orizontales                   | Para separar secciones de manera visual
 ***xxxxxx***      | Cursiva y negrita                        |
-[] ()             | Links o enlaces en línea                 | Se crean escribiendo la palabra enlazada entre [] corchetes, y el link en cuestión entre () paréntesis. [enlace en línea](http://www.limni.net)
-
+[] ()             | Links o enlaces en línea                 | Se crean escribiendo la palabra enlazada entre [] corchetes, y el link en cuestión entre () paréntesis. [enlace en línea]("https://...")
 <code>            | Código puro                              | Envolver el texto entre dos comillas sencillas `.
 !                 | Insertar imágenes                        | añadir un símbolo de ! exclamación al principio y el enlace no será otro que la ubicación de la imagen.
 <>                | Links automáticos                        | Estos son necesarios cuando lo que quieres es mostrar una URL completa, y no un enlace enmascarado bajo una palabra o frase como ocurre con los links en línea.
