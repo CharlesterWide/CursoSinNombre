@@ -115,7 +115,7 @@ Comando           | ¿Qué añado?                              | Comentario
 \                 | Eliminar efecto del comando              | Se escribe delante de cada comando
 
 
-![FIN DE MI TAREITA](https://www.bing.com/images/search?view=detailV2&ccid=x5pYzMpE&id=895E5170E7C911F15229D6418F33C755DBF74808&thid=OIP.x5pYzMpE1hhn983SxiktuQAAAA&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.c79a58ccca44d61867f7cdd2c6292db9%3frik%3dCEj321XHM49B1g%26riu%3dhttp%253a%252f%252fcdn.memegenerator.es%252fimagenes%252fmemes%252ffull%252f1%252f48%252f1482973.jpg%26ehk%3dEN6CJ%252fNKzIXUVyq8O9cGiIKPjWKVIfIhLcJxkVV1jV0%253d%26risl%3d%26pid%3dImgRaw%26r%3d0%26sres%3d1%26sresct%3d1%26srh%3d800%26srw%3d800&exph=400&expw=400&q=gif+gracias+por+ver&simid=608036518925520322&FORM=IRPRST&ck=E1DF9AB27762FDF9F2AF5CFDBDD144B3&selectedIndex=1&ajaxhist=0&ajaxserp=0 "mi foto")
+![FIN DE MI TAREITA](https://th.bing.com/th/id/OIP.x5pYzMpE1hhn983SxiktuQAAAA?pid=ImgDet&rs=1 "mi foto")
 
 ¡Un saludo! 
 
