@@ -97,7 +97,68 @@ Operacion                                 | Descripción
 
 El **Markdown** es un lenguaje de marcado con sintaxis en texto plano para generar textos con formato.
 
-Los archivos en Markdown se guardan con la extensión .md y se pueden abrir en cualquier editor de texto. <code class="language-plaintext highlighter-rouge">.md</code>
+Los archivos en Markdown se guardan con la extensión <code class="language-plaintext highlighter-rouge">.md</code> y se pueden abrir en cualquier editor de texto. 
+
+### 3.2 Uso del lenguaje Markdown
+
+#### 3.2.1 Encabezados
+
+Markdown dispone de cuatro niveles de encabezados definidos por el número de <code class="language-plaintext highlighter-rouge">#</code> antes del texto del encabezado.
+
+| #     | Primer nivel de encabezado    |
+| ##    | Segundo nivel de encabezado   |
+| ###   | Tercer nivel de encabezado    |
+| ####  | Cuarto nivel de encabezado    |
+
+#### 3.2.2 Párrafos y saltos de línea
+
+Los párrafos son simplemente texto plano escrito sin ninguna peculiaridad propia del lenguaje, para escribir un párrafo simplemente teclea como lo haría en un archivo <code class="language-plaintext highlighter-rouge">.txt</code>. 
+
+
+
+De igual modo, para un salto de línea simplemente hay que introducir un salto de línea como lo haces normalmente en cualquier editor de texto como puede ser **Microsoft Word**, pulsando el botón <code class="language-plaintext highlighter-rouge">Enter</code> de tu teclado. Este párrafo por ejemplo, tiene tres saltos de línea de separación en lugar de uno con respecto al anterior.
+
+El texto se puede poner en cursivas encerrándolo entre los símbolos <code class="language-plaintext highlighter-rouge">*</code> o <code class="language-plaintext highlighter-rouge">-</code>. De la misma forma, el texto en negritas se escribe encerrando la palabra entre <code class="language-plaintext highlighter-rouge">**</code> o <code class="language-plaintext highlighter-rouge">__</code>.
+
+* **Ejemplo de texto en negrita**
+* *Ejemplo de texto en cursiva*
+
+#### 3.2.3 Listados
+
+Markdown soporta la creación de listas ordenadas y sin ordenar.
+
+Para la creación de una lista sin orden simplemente debemos utilizar el caracter <code class="language-plaintext highlighter-rouge">*</code> delante del parráfo o línea que queramos listar y un espacio entre el caracter y el texto y, para crear distintos niveles solo tenemos que aumentar la sangría de las líneas. Es tan sencillo como se muestra a continuación:
+
+* Padre
+    * Hijo 1
+    * Hijo 2
+    * Hijo 3
+* Madre
+
+Para listas ordenadas es tan sencillo como listar mediante números y un punto, como se muestra a continuación:
+
+1. tarea 1
+2. tarea 2
+3. tarea 3
+
+#### 3.2.4 Fragmentos de código
+
+Dado que Markdown no distingue las tipografías involucradas los fragmentos de código se representan encerrados entre dos signos de acento grave <code class="language-plaintext highlighter-rouge">`</code>. Y cuando queramos representar un bloque completo de código lo debemos encerrar entre dos líneas de tres acentos graves. 
+
+```
+...
+Fragmento de código
+...
+```
+
+#### 3.2.4 Bloques de citas
+
+Los bloques de citas se representan usando el caracter <code class="language-plaintext highlighter-rouge">></code> delante del párrafo que queramos convertir en un bloque de citas. Como se muestra a continuación:
+
+> Éste es un párrafo de texto incluido como un bloque de cita
+
+
+
 
 **Ejemplo de tabla en marcado .md**
 | / | Titulo A | Titulo B | Titulo C | Titulo D |
