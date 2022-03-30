@@ -105,8 +105,8 @@ Comando           | ¿Qué añado?                              | Comentario
 \>\>              | Generar citas animadas                   |
 \*  \-  \+        | Elementos para crear listas desordenadas | Si se quiere crear una lista animada   se añade ** cuatro espacios en blanco antes del siguiente (* - +).
 \1.               | Elemento para crear lista ordenada       | Añadir sintaxis de tipo "Nº" delante
-~~~               | Crear un bloque que contenga código      | Se encierra el párrafo entre dos líneas formadas por tres virgilillas.
-\***  \---  \___  | Las reglas orizontales                   | Para separar secciones de manera visual
+\~~~              | Crear un bloque que contenga código      | Se encierra el párrafo entre dos líneas formadas por tres virgilillas.
+***  ---  ___     | Las reglas orizontales                   | Para separar secciones de manera visual
 ***xxxxxx***      | Cursiva y negrita                        |
 [] ()             | Links o enlaces en línea                 | Se crean escribiendo la palabra enlazada entre [] corchetes, y el link en cuestión entre () paréntesis. [enlace en línea](http://www.limni.net)
 
