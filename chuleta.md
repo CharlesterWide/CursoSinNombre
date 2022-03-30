@@ -153,12 +153,49 @@ Fragmento de código
 ...
 ```
 
-#### 3.2.4 Bloques de citas
+#### 3.2.5 Bloques de citas
 
 Los bloques de citas se representan usando el caracter <code class="language-plaintext highlighter-rouge">></code> delante del párrafo que queramos convertir en un bloque de citas. Como se muestra a continuación:
 
 > Éste es un párrafo de texto incluido como un bloque de cita
 
+#### 3.2.6 Bloques de citas
+
+Se pueden mostrar imágenes mediante el uso del caracter <code class="language-plaintext highlighter-rouge">!</code>, seguido de un texto alternativo entre corchetes, seguido a su vez por el URL de la imagen y un título opcional entre comillas.
+
+![Foto de ejemplo](https://media-exp1.licdn.com/dms/image/C4D03AQFNqIfFGUsLFg/profile-displayphoto-shrink_800_800/0/1574444201467?e=1654128000&v=beta&t=dmmHEevV7WN1XyVcIfAkDJ2502Rlwf5LQMDiNry8nyo "Mi foto")
+
+#### 3.2.7 Enlaces o hipertexto
+
+El título del enlace se encierra primero entre corchetes y después se incluye la dirección completa del URL entre paréntesis.
+
+[Mi GitHub](https://github.com/FranciscoJoseLara).
+
+#### 3.2.8 Líneas horizontales
+
+Puedes incluir líneas horizontales si escribes en una misma línea cualquiera de los siguientes tres signos: <code class="language-plaintext highlighter-rouge">-</code>, <code class="language-plaintext highlighter-rouge">*</code> o <code class="language-plaintext highlighter-rouge">_</code>, sin importar los espacios que dejes entre ellos. Cualquiera de estas combinaciones generarán una línea horizontal como las siguientes:
+
+---
+***
+___
+
+#### 3.2.9 Tablas
+
+La versión básica de Markdown no incluye tablas, sin embargo, algunos sitios web y aplicaciones usan variantes de Markdown que pueden incluir tablas y otras características especiales. Para crear una tabla en GitHub, usa barras verticales <code class="language-plaintext highlighter-rouge">|</code> para separar columnas y guiones entre los encabezados y el resto del contenido de la tabla.
+
+| /      | Encabezado A | Encabezado B |
+|--------|--------------|--------------|
+| Fila 1 | 1,1          | 1,2          |
+| Fila 2 | 2,1          | 2,2          |
+| Fila 3 | 3,1          | 3,2          |
+
+Para especificar la alineación del contenido de cada columna se pueden agregar dos puntos <code class="language-plaintext highlighter-rouge">:</code> al renglón de los encabezados:
+
+| /      | Encabezado A | Encabezado B |
+|-------:|:------------:|:-------------|
+| Fila 1 | 1,1          | 1,2          |
+| Fila 2 | 2,1          | 2,2          |
+| Fila 3 | 3,1          | 3,2          |
 
 
 
