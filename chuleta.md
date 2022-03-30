@@ -90,3 +90,33 @@ Operacion                                 | Descripción
 ------------------------------------------|------------
 **pull request** (entre ramas)            | En la página principal del repositorio: "New pull request" y se selecciona la rama deseada
 **pull request** (entre repositorios)     | Dentro de la misma opción anterior, seleccionando: "compare across forks"
+
+## 3. ¿Qué es .md y cómo se usa?
+
+Un archivo .md es un documento de texto simple que no contiene ningún otro elemento. En él, pueden introducirse símbolos en el texto para definir el formato de ciertas secciones. Por ejemplo, puedes poner en negrita una palabra o sección colocando dos asteriscos antes y después de esta. La extensión de archivo .md, que en algunos casos también aparece como .markdown, viene del inglés Markdown documentation (documentación de Markdown). Esta designación indica que cada archivo .md está escrito en uno de los dialectos disponibles de los lenguajes de desarrollo Markdown, que pertenecen a los lenguajes markup o de marcado.
+Los archivos .md pueden abrir y editarse con cualquier editor de texto, como Windows NotePad, gVim o PowerShell.
+
+Comando           | ¿Qué añado?                              | Comentario
+------------------|------------------------------------------|------------------------------------------
+#  ##  ###        | Encabezado Pincipal, Título y subtítulo  | 
+**negrita**       | Palabra en negrita                       | 
+*cursiva*         | Palabra en cursiva                       | 
+>                 | Para generar una cita                    | Se indica al comienzo del bloque de texto
+>>                | Generar citas animadas                   |
+*  -  +           | Elementos para crear listas desordenadas | Si se quiere crear una lista animada   se añade ** cuatro espacios en blanco antes del siguiente (* - +).
+1.                | Elemento para crear lista ordenada       | Añadir sintaxis de tipo "Nº" delante
+~~~               | Crear un bloque que contenga código      | Se encierra el párrafo entre dos líneas formadas por tres virgilillas.
+***  ---  ___     | Las reglas orizontales                   | Para separar secciones de manera visual
+***xxxxxx***      | Cursiva y negrita                        |
+[] ()             | Links o enlaces en línea                 | Se crean escribiendo la palabra enlazada entre [] corchetes, y el link en cuestión entre () paréntesis. [enlace en línea](http://www.limni.net)
+
+<code>            | Código puro                              | Envolver el texto entre dos comillas sencillas `.
+!                 | Insertar imágenes                        | añadir un símbolo de ! exclamación al principio y el enlace no será otro que la ubicación de la imagen.
+<>                | Links automáticos                        | Estos son necesarios cuando lo que quieres es mostrar una URL completa, y no un enlace enmascarado bajo una palabra o frase como ocurre con los links en línea.
+\                 | Eliminar efecto del comando              | Se escribe delante de cada comando
+
+
+[FIN DE MI TAREITA](https://www.bing.com/images/search?view=detailV2&ccid=x5pYzMpE&id=895E5170E7C911F15229D6418F33C755DBF74808&thid=OIP.x5pYzMpE1hhn983SxiktuQAAAA&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.c79a58ccca44d61867f7cdd2c6292db9%3frik%3dCEj321XHM49B1g%26riu%3dhttp%253a%252f%252fcdn.memegenerator.es%252fimagenes%252fmemes%252ffull%252f1%252f48%252f1482973.jpg%26ehk%3dEN6CJ%252fNKzIXUVyq8O9cGiIKPjWKVIfIhLcJxkVV1jV0%253d%26risl%3d%26pid%3dImgRaw%26r%3d0%26sres%3d1%26sresct%3d1%26srh%3d800%26srw%3d800&exph=400&expw=400&q=gif+gracias+por+ver&simid=608036518925520322&FORM=IRPRST&ck=E1DF9AB27762FDF9F2AF5CFDBDD144B3&selectedIndex=1&ajaxhist=0&ajaxserp=0)
+
+¡Un saludo! !C:\Users\Imágenes
+
