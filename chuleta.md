@@ -169,7 +169,7 @@ Se pueden mostrar imágenes mediante el uso del caracter <code class="language-p
 
 El título del enlace se encierra primero entre corchetes y después se incluye la dirección completa del URL entre paréntesis.
 
-[Mi GitHub](https://github.com/FranciscoJoseLara).
+[Mi GitHub](https://github.com/FranciscoJoseLara)
 
 #### 3.2.9 Líneas horizontales
 
@@ -196,3 +196,7 @@ Para especificar la alineación del contenido de cada columna se pueden agregar 
 | Fila 1 | 1,1          | 1,2          |
 | Fila 2 | 2,1          | 2,2          |
 | Fila 3 | 3,1          | 3,2          |
+
+### Referencias de las sección 3
+
+* Referencia: [Programming Historian](https://programminghistorian.org/es/lecciones/introduccion-a-markdown)
