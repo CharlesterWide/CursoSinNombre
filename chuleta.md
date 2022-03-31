@@ -91,31 +91,112 @@ Operacion                                 | Descripción
 **pull request** (entre ramas)            | En la página principal del repositorio: "New pull request" y se selecciona la rama deseada
 **pull request** (entre repositorios)     | Dentro de la misma opción anterior, seleccionando: "compare across forks"
 
-## 3. ¿Qué es .md y cómo se usa?
+## 3. Uso del formato .md
 
-Un archivo .md es un documento de texto simple que no contiene ningún otro elemento. En él, pueden introducirse símbolos en el texto para definir el formato de ciertas secciones. Por ejemplo, puedes poner en negrita una palabra o sección colocando dos asteriscos antes y después de esta. La extensión de archivo .md, que en algunos casos también aparece como .markdown, viene del inglés Markdown documentation (documentación de Markdown). Esta designación indica que cada archivo .md está escrito en uno de los dialectos disponibles de los lenguajes de desarrollo Markdown, que pertenecen a los lenguajes markup o de marcado.
-Los archivos .md pueden abrir y editarse con cualquier editor de texto, como Windows NotePad, gVim o PowerShell.
+### 3.1 Definición
 
-Comando           | ¿Qué añado?                              | Comentario
-------------------|------------------------------------------|------------------------------------------
-\#  \#\#  \#\#\#  | Encabezado Pincipal, Título y subtítulo  | 
-\**negrita**      | Palabra en negrita                       | 
-*cursiva*         | Palabra en cursiva                       | 
-\>                | Para generar una cita                    | Se indica al comienzo del bloque de texto
-\>\>              | Generar citas animadas                   |
-\*  \-  \+        | Elementos para crear listas desordenadas | Si se quiere crear una lista animada   se añade ** cuatro espacios en blanco antes del siguiente (* - +).
-\1.               | Elemento para crear lista ordenada       | Añadir sintaxis de tipo "Nº" delante
-\~~~              | Crear un bloque que contenga código      | Se encierra el párrafo entre dos líneas formadas por tres virgilillas.
-***  ---  ___     | Las reglas orizontales                   | Para separar secciones de manera visual
-***xxxxxx***      | Cursiva y negrita                        |
-[] ()             | Links o enlaces en línea                 | Se crean escribiendo la palabra enlazada entre [] corchetes, y el link en cuestión entre () paréntesis. [enlace en línea]("https://...")
-<code>            | Código puro                              | Envolver el texto entre dos comillas sencillas `.
-!                 | Insertar imágenes                        | añadir un símbolo de ! exclamación al principio y el enlace no será otro que la ubicación de la imagen.
-<>                | Links automáticos                        | Estos son necesarios cuando lo que quieres es mostrar una URL completa, y no un enlace enmascarado bajo una palabra o frase como ocurre con los links en línea.
-\                 | Eliminar efecto del comando              | Se escribe delante de cada comando
+El **Markdown** es un lenguaje de marcado con sintaxis en texto plano para generar textos con formato.
 
+Los archivos en Markdown se guardan con la extensión <code class="language-plaintext highlighter-rouge">.md</code> y se pueden abrir en cualquier editor de texto. 
 
-![FIN DE MI TAREITA](https://th.bing.com/th/id/OIP.x5pYzMpE1hhn983SxiktuQAAAA?pid=ImgDet&rs=1 "mi foto")
+### 3.2 Uso del lenguaje Markdown
 
-¡Un saludo! 
+#### 3.2.1 Encabezados
 
+Markdown dispone de cuatro niveles de encabezados definidos por el número de <code class="language-plaintext highlighter-rouge">#</code> antes del texto del encabezado.
+
+| Caracter  | Definición                    |
+|----------:|-------------------------------|
+| #         | Primer nivel de encabezado    |
+| ##        | Segundo nivel de encabezado   |
+| ###       | Tercer nivel de encabezado    |
+| ####      | Cuarto nivel de encabezado    |
+
+#### 3.2.2 Párrafos y saltos de línea
+
+Los párrafos son simplemente texto plano escrito sin ninguna peculiaridad propia del lenguaje, para escribir un párrafo simplemente teclea como lo haría en un archivo <code class="language-plaintext highlighter-rouge">.txt</code>. 
+<br><br><br><br>
+De igual modo, para un salto de línea simplemente hay que introducir <code class="language-plaintext highlighter-rouge">< br ></code> como se haría normalmente en **HTML**. Este párrafo por ejemplo, tiene cuatro saltos de línea de separación en lugar de uno con respecto al anterior.
+
+#### 3.2.3 Negrita y cursiva
+
+El texto se puede poner en cursivas encerrándolo entre los símbolos <code class="language-plaintext highlighter-rouge">*</code> o <code class="language-plaintext highlighter-rouge">-</code>. De la misma forma, el texto en negritas se escribe encerrando la palabra entre <code class="language-plaintext highlighter-rouge">**</code> o <code class="language-plaintext highlighter-rouge">__</code>.
+
+* **Ejemplo de texto en negrita**
+* *Ejemplo de texto en cursiva*
+
+#### 3.2.4 Listados
+
+Markdown soporta la creación de listas ordenadas y sin ordenar.
+
+Para la creación de una lista sin orden simplemente debemos utilizar el caracter <code class="language-plaintext highlighter-rouge">*</code> delante del parráfo o línea que queramos listar y un espacio entre el caracter y el texto y, para crear distintos niveles solo tenemos que aumentar la sangría de las líneas. Es tan sencillo como se muestra a continuación:
+
+* Padre
+    * Hijo 1
+    * Hijo 2
+    * Hijo 3
+* Madre
+
+Para listas ordenadas es tan sencillo como listar mediante números y un punto, como se muestra a continuación:
+
+1. tarea 1
+2. tarea 2
+3. tarea 3
+
+#### 3.2.5 Fragmentos de código
+
+Dado que Markdown no distingue las tipografías involucradas los fragmentos de código se representan encerrados entre dos signos de acento grave <code class="language-plaintext highlighter-rouge">`</code>. Y cuando queramos representar un bloque completo de código lo debemos encerrar entre dos líneas de tres acentos graves. 
+
+```
+...
+Fragmento de código
+...
+```
+
+#### 3.2.6 Bloques de citas
+
+Los bloques de citas se representan usando el caracter <code class="language-plaintext highlighter-rouge">></code> delante del párrafo que queramos convertir en un bloque de citas. Como se muestra a continuación:
+
+> Éste es un párrafo de texto incluido como un bloque de cita
+
+#### 3.2.7 Bloques de citas
+
+Se pueden mostrar imágenes mediante el uso del caracter <code class="language-plaintext highlighter-rouge">!</code>, seguido de un texto alternativo entre corchetes, seguido a su vez por el URL de la imagen y un título opcional entre comillas.
+
+![Foto de ejemplo](https://media-exp1.licdn.com/dms/image/C4D03AQFNqIfFGUsLFg/profile-displayphoto-shrink_800_800/0/1574444201467?e=1654128000&v=beta&t=dmmHEevV7WN1XyVcIfAkDJ2502Rlwf5LQMDiNry8nyo "Mi foto")
+
+#### 3.2.8 Enlaces o hipertexto
+
+El título del enlace se encierra primero entre corchetes y después se incluye la dirección completa del URL entre paréntesis.
+
+[Mi GitHub](https://github.com/FranciscoJoseLara)
+
+#### 3.2.9 Líneas horizontales
+
+Puedes incluir líneas horizontales si escribes en una misma línea cualquiera de los siguientes tres signos: <code class="language-plaintext highlighter-rouge">-</code>, <code class="language-plaintext highlighter-rouge">*</code> o <code class="language-plaintext highlighter-rouge">_</code>, sin importar los espacios que dejes entre ellos. Cualquiera de estas combinaciones generarán una línea horizontal como las siguientes:
+
+---
+***
+___
+
+#### 3.2.10 Tablas
+
+La versión básica de Markdown no incluye tablas, sin embargo, algunos sitios web y aplicaciones usan variantes de Markdown que pueden incluir tablas y otras características especiales. Para crear una tabla en GitHub, usa barras verticales <code class="language-plaintext highlighter-rouge">|</code> para separar columnas y guiones entre los encabezados y el resto del contenido de la tabla.
+
+|        | Encabezado A | Encabezado B |
+|--------|--------------|--------------|
+| Fila 1 | 1,1          | 1,2          |
+| Fila 2 | 2,1          | 2,2          |
+| Fila 3 | 3,1          | 3,2          |
+
+Para especificar la alineación del contenido de cada columna se pueden agregar dos puntos <code class="language-plaintext highlighter-rouge">:</code> al renglón de los encabezados:
+
+|        | Encabezado A | Encabezado B |
+|:-------|:------------:|-------------:|
+| Fila 1 | 1,1          | 1,2          |
+| Fila 2 | 2,1          | 2,2          |
+| Fila 3 | 3,1          | 3,2          |
+
+### Referencias de las sección 3
+
+* Referencia: [Programming Historian](https://programminghistorian.org/es/lecciones/introduccion-a-markdown)
