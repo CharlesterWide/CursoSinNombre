@@ -99,6 +99,23 @@ floatOlong = 0.012 + 34
 floatOlong = 1e-4 * 100
 complejo = 12j + 34 + 5j
 
+
+# Operaciones con números
+numero = 2 + 2     # Suma normal entre dos números
+numero += 2        # Resultado de sumar a si mismo con otro número
+numero = 2 - 2     # Resta normal entre dos números
+numero -= 2        # Resultado de restar a si mismo con otro número
+numero = 2 * 2     # Multiplicación entre dos números
+numero *= 2        # Multiplicación de si mismo con otro número
+numero = 2 / 2     # División entre dos números
+numero /= 2        # División de si mismo con otro número
+numero = 2**2      # Un número elevado a otro
+numero **= 2       # Si mismo elevado a otro número
+numero = 2 % 2     # Para conocer el resto de la division (muy util para saber si un número es par o impar, el resto de cualquier número entre 2 puede dar o 0 o 1, si da 0 es par, 1 impar)
+numero %= 2        # El resto de la división de si con otro número
+numero = 2 // 2    # Al contrario que %, este devuelve la parte entera de la división
+numero //= 2       # La parte entera de la división de si con otro número
+
 # Conversión de tipos
 """
     Podemos usar la conversion para pasar de un tipo a otro

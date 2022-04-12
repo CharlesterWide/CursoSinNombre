@@ -10,7 +10,7 @@ print(frase,caracter)
 
 # Concatenar strings (juntar o sumar)
 frase = "Esta es la primera parte"
-frase = frase + " esto la segunda"
+frase += " esto la segunda"
 print("Primera declaración de frase: ",frase)
 frase1 = "Primera parte "
 frase2 = "Segunda parte"
@@ -111,7 +111,7 @@ contador = 0
 caracter = ''
 while caracter != '<' and contador < len(frase):        # La funcion len() devuelve el número de caracteres que tiene el string
     caracter = frase[contador]
-    contador = contador + 1
+    contador += 1
 print("Hemos salido antes porque: ",contador, caracter, len(frase))
 
 

@@ -8,7 +8,7 @@
 array = [1,2,3,4,5,6]
 array = [*range(7)]                 # Poniendo un asterisco delante de la función range "desempaquetamos" el range
 print("Declaración de array usando range(): ",array)
-array = array + [*range(50)]        # Al igual que con el string, podemos extender sumando más array
+array += [*range(50)]               # Al igual que con el string, podemos extender sumando más array
 print("Declaración de array sumando dos array: ",array)
 
 # Solo números?
