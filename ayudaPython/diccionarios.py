@@ -22,6 +22,7 @@ print("Valor modificado: ",diccionario)
 
 # Se pueden añadir claves nuevas?
 diccionario['Hijos'] = "Un pájaro cuenta?"   # Tan fácil como esto, como si modificasemos una de las claves, aunque no exista, esta se añadirá
+                                             # Es importante remarcar que no podemos inicializar un diccionario directamente así, para añadir claves, previamente debe existir el dict.
 print("Clave 'Hijos' añadida: ",diccionario)
 
 ## Funciones del diccionario ##
