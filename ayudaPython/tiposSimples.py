@@ -169,4 +169,13 @@ input("Para continuar presiona \"enter\" dos veces")    # Muestra un mensaje y e
 input()                                                 # No muestra nada pero si espera la entrada igual
 
 
+# Funcion type
+"""
+    Es una funcion realmente útil. La podemos usar para saber el tipo de una variable.
+"""
+unNumero = 123
+print("Tipo de la variable unNumero: ", type(unNumero))
+unFloat = 123.4
+print("Tipo de la variable unFloat: ", type(unFloat))
+
 print("Hasta aquí la lección de datos SIMPLES")
