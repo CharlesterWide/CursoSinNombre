@@ -1,4 +1,4 @@
-# ** Puntos "positivos" de la clase **
+# **Puntos "positivos" de la clase**
 Aquí tenéis los puntos que vais ganando (o perdiendo) a lo largo del curso y el por qué.
 **Realmente no vale para nada**
 
@@ -14,7 +14,7 @@ Aquí tenéis los puntos que vais ganando (o perdiendo) a lo largo del curso y e
 | Raul   | +                                |      1|
 
 
-## ** Motivo del punto **
+## **Motivo del punto**
 1. Todo el mundo gana un punto (no recuerdo realmente la primera clase)
 2. 20/03/22 -> **Fran** Punto por subir la mejor ampliación de la chuleta y ser elegido su PR.
 3. 17/04/22 -> **Fran** Dos puntos por ser el primero en entregar el ejercicio básico de Python.
