@@ -1,13 +1,3 @@
-""" --------------------------------- Borrar por el alumno -----------------------------------
-    Esta es la plantilla de ejercicios que deberás entregar. Para ello, la copias y le cambias el nombre a tunombreBasicosPython.py y borras mis comentarios, pero no borres los enunciados.
-    Deberás dejarlo dentro de la carpeta de entrega, subirlo a tu rama y hacer un pull request para que yo te lo pueda revisar, si no quieres que te lo revise telemáticamente, dejalo subido a tu rama simplemente y me lo
-    comentas por el grupo (o privado) y lo veré detenidamente contigo, si no en la proxima clase, cuando sea que podamos.
-    Recuerda que si tienes alguna duda, yo estoy disponible 24/7 para mis alumnos (a excepción de cuando duermo, conduzco o no me da la gana de mirar el movil).
-
-    He intentado hacer ejercicios lo más simple y mejor explicados posibles. Se que no gustan los ejercicios matemáticos, pero son los más fáciles de poner. No te preocupes que tarde o temprano haremos cosas más "reales"
-    Intenta hacerlo por tu cuenta, pero no pasa nada si te atascas, entiendo que hay cosas que o no he explicado suficientemente bien o no son fáciles de comprender.
---------------------------------- Borrar por el alumno ----------------------------------- """
-
 # Ejercicio 1, Calcular Pi
 """ 
     Vamos a calcular el número Pi usando el método de Leibniz. Este es un algoritmo muy util, ya que nos permite aproximar con bastante precisión este puñetero número.
@@ -20,6 +10,19 @@
     Después de recorrer todo el bucle, muestra por pantalla el Pi obtenido.
 """
 
+numero = int(input("Introduce por un numero: "))
+numero = numero*1000000
+
+k = 1
+pi = 0
+
+for i in range(numero):
+    if i%2 == 0:
+        pi = pi + 4/k
+    else:
+        pi = pi - 4/k
+    k = k+2
+print(f"El valor del numero pi es: {pi}")
 
 # Ejercicio 2, El área de una circunferencia, la longitud del perímetro y el volumen de la esfera de radio R
 """
@@ -31,6 +34,15 @@
     Las fómulas no están escritas para Python, ten en cuenta que tendrás que escribirlas correctamente.
     Crea un diccionario llamado circunferencia que almacene los cuatro datos, el radio, longitud, área y volumen y lo enseñas por pantalla
 """
+radio = float(input("Introduce el radio: "))
+
+diccionario ={
+    'radio' : radio,
+    'longitud' : 2*pi*radio,
+    'area': pi*radio**2,
+    'volumen' : 4*(pi * radio**3)/3
+}
+print("El valor del radio es:",diccionario["radio"],", el de la longitud es: ",diccionario["longitud"],", el del area es: ",diccionario["area"], "y el del volumen es: ",diccionario["volumen"])
 
 # Ahora strings y listas
 # Ejercio 3, un correo
@@ -40,6 +52,34 @@
     devuelve una lista con todos los cachos que encuentre separados por el caracter que quieras, luego deberás acceder a las posiciones de la lista para extraer lo que quieres almacenar.
     El diccionario se llamará email y solo contendrá las dos cosas por separado, muestralo por pantalla.
 """
+correo = input("Introduce un correo: ")
+
+posicion = correo.find("@")
+
+aux = posicion + 1
+
+usuario = ""
+dominio = ""
+
+if posicion != -1:
+
+    for i in range(posicion):
+        usuario = usuario + correo[i]
+
+    while(aux < len(correo)):
+        dominio = dominio + correo[aux]
+        aux = aux + 1
+
+email ={
+    'usuario' : usuario,
+    'dominio' : dominio
+}
+print("El usuario es:",email["usuario"], "y el dominio es:",email["dominio"])
+
+#tupla = correo.partition('@')
+#print("Usuario y dominio separados por la tupla:",tupla)
+# Tambien se podia hacer asi y no complicarme la vida pero life... :)
+
 
 
 # Ejercicio 4, a una lista
@@ -49,6 +89,14 @@
     Se puede hacer de muchas maneras esto, con funciones ya existentes o con bucles, haz lo que más cómodo veas.
 """
 
+caracteres = []
+
+i = 0
+while i < len(usuario):
+    caracteres.append(usuario[i])
+    i = i+1
+
+print("El usuario anterior es:",caracteres)
 
 # Bucles
 # Ejercico 5, el triangulo de números
@@ -63,6 +111,16 @@
     12345
 """
 
+lineas = int(input("Numero de lineas que quiere: "))
+
+for i in range(lineas):
+
+    for j in range(i+1):
+
+        print(j+1, end="")
+
+    print("\r")
+
 # Ejercicio 6, ahora en versión piramidal!
 """ 
     Así es, la puñetera piramide. Es una extensión de lo anterior, solo que ahora tenemos lado izquierdo. El lado izquierdo en un espejo del derecho.
@@ -74,9 +132,29 @@
     543212345
     Date cuenta que ahora tenemos "espacios blancos" en el lado izquierdo que tenemos que respetar y que en el centro solo hay un número, que si lo haces sin pensar en el centro tendrás siempre 11.
 """
+# Efectivamente lo he mirado pq mucho texto de piramide y poco tiempo
+otraputapiramide = int(input("Introduce las filas: "))
+
+for i in range(1, otraputapiramide+1):
+    
+    codigo = ""
+
+    for x in range(i,1,-1):
+        codigo = codigo + str(x)
+    for x in range(1,i+1):
+        codigo = codigo + str(x)
+
+    print(codigo.center((otraputapiramide*2)-1,' '))
 
 # Ejercicio 7, salimos de aquí
 """
     Como último ejercicio, vamos a hacer un bucle que pida por teclado al usuario una frase/palabra. Nos aseguraremos de transformar lo introducido a minusculas.
     Todo lo que pongamos será escrito como un eco en la pantalla y solo saldremos del bucle si lo introducido es la palabra "salir"
 """
+
+salir = False
+while (salir == False):
+    ayuda = input("Introduce la palabra 'salir' para escapar de aqui: ")
+    ayuda = ayuda.lower()
+    if(ayuda == "salir"):
+        salir = True
