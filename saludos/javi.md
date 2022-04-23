@@ -12,4 +12,5 @@ Acabar la carrera
 
     * **La oscuridad**: Me apasiona.
 
+    * **Oh yeah**: ¡Oh yeah!
     
