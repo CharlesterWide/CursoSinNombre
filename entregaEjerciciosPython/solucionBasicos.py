@@ -1,4 +1,3 @@
-
 # Ejercicio 1, Calcular Pi
 """ 
     Vamos a calcular el número Pi usando el método de Leibniz. Este es un algoritmo muy util, ya que nos permite aproximar con bastante precisión este puñetero número.
@@ -9,22 +8,22 @@
     En cada iteración del bucle deberemos comprobar si el iterador (al que llamaremos i), es par o no. Si es par, sumaremos a Pi 4/k, si es impar le restaremos 4/k.
     Una vez sumado o restado, incrementamos k en 2.
     Después de recorrer todo el bucle, muestra por pantalla el Pi obtenido.
-
 """
-
-numero = int(input("Introduce el numero: "))
-numero = (numero*100000)
+print("====================================")
+print("Ejercicio 1: calculando el número PI")
+rango = int(input(
+    "Introduce el número de veces que se hará el algoritmo (por un millon): ")) * 1000000
 k = 1
-Pi = 0
+pi = 0
 
-for i in range(numero):
-    if i%2 == 0:
-        Pi = Pi + (4/k)
+for i in range(rango):
+    if i % 2 == 0:
+        pi += 4/k
     else:
-        Pi = Pi - (4/k)
-    k = k + 2
+        pi -= 4/k
 
-print(f"El resultado de Pi es: {Pi}")
+    k += 2
+print(f"La aproximación obtenida después de hacer {rango} iteraciones del número PI es: {pi}")
 
 # Ejercicio 2, El área de una circunferencia, la longitud del perímetro y el volumen de la esfera de radio R
 """
@@ -36,20 +35,20 @@ print(f"El resultado de Pi es: {Pi}")
     Las fómulas no están escritas para Python, ten en cuenta que tendrás que escribirlas correctamente.
     Crea un diccionario llamado circunferencia que almacene los cuatro datos, el radio, longitud, área y volumen y lo enseñas por pantalla
 """
-
-radio = int(input("Introduce el radio: "))
-longitud = 2 * Pi * radio
-area = Pi * (radio**2)
-volumen = (4 * (Pi * (radio**3))) / 3
-
-Circunferencia = {
-    'Radio' : radio,
-    'Longitud' : longitud,
-    'Area' : area,
-    'Volumen' : volumen
+print("====================================")
+print("Ejercicio 2: El cículo y sus características")
+radio = int(input("Radio de la circunferencia: "))
+circunferencia = {
+    'radio': radio,
+    'longitud': 2 * pi * radio,
+    'area': pi * radio**2,
+    'volumen': 4/3 * pi * radio**3
 }
-
-print(Circunferencia)
+print(f"La circunferencia tiene:\n"+
+      f"Radio: {circunferencia['radio']}\n"+
+      f"Longitud: {circunferencia['longitud']}\n"+
+      f"Área: {circunferencia['area']}\n"+
+      f"Volumen: {circunferencia['volumen']}")
 
 # Ahora strings y listas
 # Ejercio 3, un correo
@@ -57,18 +56,16 @@ print(Circunferencia)
     Se pedirá por teclado un email y tendremos que almacenar en un diccionario separados el usuario y el dominio.
     El formato de todo mail es "usuario"@"dominio", por lo que usaremos las funciones de los string que nos permitan separar por un caracter en... (continua tu que este es fácil). Recuerda que la funcion que debes usar 
     devuelve una lista con todos los cachos que encuentre separados por el caracter que quieras, luego deberás acceder a las posiciones de la lista para extraer lo que quieres almacenar.
-    El diccionario se llamará email y solo contendrá las dos cosas por separado, muestralo por pantalla.
+    El diccionario se llamará email y solo contendrá las dos cosas por separado.
 """
-correo = input("Introduce tu email: ")
-cadenas = correo.partition('@')
-usuario = cadenas[0]
-dominio = cadenas[2]
-Email = {
-    'Usuario' : usuario,
-    'Dominio' : dominio
+print("====================================")
+print("Ejercicio 3: Separando un email")
+correo = input("Introduce un email: ")
+correo = correo.split('@')
+email = {
+    'usuario': correo[0],
+    'dominio': correo[1]
 }
-
-print(Email)
 
 
 # Ejercicio 4, a una lista
@@ -77,16 +74,10 @@ print(Email)
     Muestra esa lista por pantalla.
     Se puede hacer de muchas maneras esto, con funciones ya existentes o con bucles, haz lo que más cómodo veas.
 """
-
-letra = ''
-usua = ""
-usua2 = ""
-cont = 0
-while cont < len(usuario):
-    usua = usuario[cont] + ", "
-    usua2 = usua2 + usua
-    cont = cont + 1
-print(f"Los caracteres separados del usuario son: {usua2}")
+print("====================================")
+print("Ejercicio 4: Los carácteres del usuario")
+caracteres = list(email['usuario'])
+print("La lista de carácteres del usuario es: ",caracteres)
 
 
 # Bucles
@@ -101,15 +92,14 @@ print(f"Los caracteres separados del usuario son: {usua2}")
     1234
     12345
 """
-
-altura = int(input("Introduce la altura del triangulo: "))
-numeros = ""
-for i in range(1,altura+1):
+print("====================================")
+print("Ejercicio 5: Triangulo de números")
+tamaño = int(input("Di el tamaño del triangulo: "))
+for i in range(1, tamaño+1):
     for j in range(1,i+1):
-        numeros = numeros + str(j)
-    numeros = numeros + "\n"
+        print(j,end='')
+    print()
 
-print(numeros)
 
 # Ejercicio 6, ahora en versión piramidal!
 """ 
@@ -122,27 +112,20 @@ print(numeros)
     543212345
     Date cuenta que ahora tenemos "espacios blancos" en el lado izquierdo que tenemos que respetar y que en el centro solo hay un número, que si lo haces sin pensar en el centro tendrás siempre 11.
 """
-
-lineas = int(input("Introduce la altura de la piramide: "))
-k=0
-cuenta=0
-cuenta2=0
-for i in range(1,lineas+1):
-    for j in range(1,(lineas-i)+1):
-        print(" ",end="")
-        cuenta+=1
-    while k!=((2*i)-1):
-        if cuenta<=lineas-1:
-            print(i+k,end="")
-            cuenta+=1
+print("====================================")
+print("Ejercicio 6: La pirámide de números")
+tamaño = int(input("Di el tamaño de la pirámide: "))
+for i in range(1, tamaño+1):
+    # Debemos comprobar que lo que toca sea 
+    for j in range(tamaño+1,1,-1):
+        if j > i:
+            print(" ",end='')
         else:
-            cuenta2+=1
-            print(i+k-(2*cuenta2),end="")
-        k+=1
-    k=cuenta=cuenta2=0
+            print(j,end='')
+    # El lado derecho es igual que antes
+    for j in range(1,i+1):
+        print(j,end='')
     print()
-
-
 
 
 # Ejercicio 7, salimos de aquí
@@ -150,11 +133,9 @@ for i in range(1,lineas+1):
     Como último ejercicio, vamos a hacer un bucle que pida por teclado al usuario una frase/palabra. Nos aseguraremos de transformar lo introducido a minusculas.
     Todo lo que pongamos será escrito como un eco en la pantalla y solo saldremos del bucle si lo introducido es la palabra "salir"
 """
+print("====================================")
+print("Ejercicio 7: El bucle de salida")
 frase = ""
-while frase!="salir":
-    frase = input("Introduce una frase en mayusculas: ")
-    frase = frase.lower()
-    if frase == "salir":
-        print("Saliendo del programa, adios")
-    else:
-        print(frase)
+while frase != "salir":
+    frase = input("Di algo, soy como un loro (si quieres salir, dilo): ").lower()
+    print(frase)
