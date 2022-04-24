@@ -1,5 +1,3 @@
-## Ejercicios resueltos por Francisco
-
 # Ejercicio 1, Calcular Pi
 """ 
     Vamos a calcular el número Pi usando el método de Leibniz. Este es un algoritmo muy util, ya que nos permite aproximar con bastante precisión este puñetero número.
@@ -12,25 +10,19 @@
     Después de recorrer todo el bucle, muestra por pantalla el Pi obtenido.
 """
 
-print("====== Ejercicio 1 ======")
-n = int(input('Dame un número semilla para calcular Pi: '))
-#n = 112             # seteo para ahorrarme el input mientras estoy trabajando los ejecicios (comentar antes de entregar)
+numero = int(input("Introduce por un numero: "))
+numero = numero*1000000
 
-n = n * 10000
+k = 1
+pi = 0
 
-K = 1
-
-Pi = 0
-
-for i in range(n):
+for i in range(numero):
     if i%2 == 0:
-        Pi = Pi + 4/K
+        pi = pi + 4/k
     else:
-        Pi = Pi - 4/K
-    K += 2
-
-print(f"\nLa aproximación al número Pi es: {Pi}\n")
-
+        pi = pi - 4/k
+    k = k+2
+print(f"El valor del numero pi es: {pi}")
 
 # Ejercicio 2, El área de una circunferencia, la longitud del perímetro y el volumen de la esfera de radio R
 """
@@ -42,27 +34,15 @@ print(f"\nLa aproximación al número Pi es: {Pi}\n")
     Las fómulas no están escritas para Python, ten en cuenta que tendrás que escribirlas correctamente.
     Crea un diccionario llamado circunferencia que almacene los cuatro datos, el radio, longitud, área y volumen y lo enseñas por pantalla
 """
+radio = float(input("Introduce el radio: "))
 
-print("====== Ejercicio 2 ======")
-R = int(input('Dame radio de la circunferencia: '))
-#R = 5                  # seteo para ahorrarme el input mientras estoy trabajando los ejecicios (comentar antes de entregar)
-
-longitud = 2 * Pi * R
-
-area = Pi * R**2
-
-volumen = 4 * ( Pi * R**3 ) / 3
-
-circunferencia = {
-    'radio' : R,
-    'longitud' : longitud,
-    'area' : area,
-    'volumen' : volumen
+diccionario ={
+    'radio' : radio,
+    'longitud' : 2*pi*radio,
+    'area': pi*radio**2,
+    'volumen' : 4*(pi * radio**3)/3
 }
-
-for (clave, valor) in circunferencia.items():
-    print(clave + ":", "{0:.2f}".format(valor))
-print()
+print("El valor del radio es:",diccionario["radio"],", el de la longitud es: ",diccionario["longitud"],", el del area es: ",diccionario["area"], "y el del volumen es: ",diccionario["volumen"])
 
 # Ahora strings y listas
 # Ejercio 3, un correo
@@ -72,27 +52,34 @@ print()
     devuelve una lista con todos los cachos que encuentre separados por el caracter que quieras, luego deberás acceder a las posiciones de la lista para extraer lo que quieres almacenar.
     El diccionario se llamará email y solo contendrá las dos cosas por separado, muestralo por pantalla.
 """
+correo = input("Introduce un correo: ")
 
-print("====== Ejercicio 3 ======")
-email = {
-    'usuario' : "",
-    'dominio' : ""
+posicion = correo.find("@")
+
+aux = posicion + 1
+
+usuario = ""
+dominio = ""
+
+if posicion != -1:
+
+    for i in range(posicion):
+        usuario = usuario + correo[i]
+
+    while(aux < len(correo)):
+        dominio = dominio + correo[aux]
+        aux = aux + 1
+
+email ={
+    'usuario' : usuario,
+    'dominio' : dominio
 }
+print("El usuario es:",email["usuario"], "y el dominio es:",email["dominio"])
 
-correo = input("\n· Introduce un email \n· (no voy a programar 200 verificaciones de que el correo sea correcto\n asique ajustate al formato ==> usuario@dominio ) : ")
-#correo = "pepe@gmail.com"   # seteo para ahorrarme el input mientras estoy trabajando los ejecicios (comentar antes de entregar)
+#tupla = correo.partition('@')
+#print("Usuario y dominio separados por la tupla:",tupla)
+# Tambien se podia hacer asi y no complicarme la vida pero life... :)
 
-
-lista = correo.split('@')
-
-i = 0
-for e in email.keys():
-    email[e] = lista[i]
-    i += 1
-
-for (clave, valor) in email.items():
-    print(clave + ":", valor)
-print()
 
 
 # Ejercicio 4, a una lista
@@ -102,17 +89,14 @@ print()
     Se puede hacer de muchas maneras esto, con funciones ya existentes o con bucles, haz lo que más cómodo veas.
 """
 
-print("====== Ejercicio 4 ======")
-
 caracteres = []
 
-for caracter in email['usuario']:
-    caracteres.append(caracter)
+i = 0
+while i < len(usuario):
+    caracteres.append(usuario[i])
+    i = i+1
 
-for i,c in enumerate(caracteres):
-    print("[ ", i, "=> ", c, " ]")
-print()
-
+print("El usuario anterior es:",caracteres)
 
 # Bucles
 # Ejercico 5, el triangulo de números
@@ -127,17 +111,15 @@ print()
     12345
 """
 
-print("====== Ejercicio 5 ======")
+lineas = int(input("Numero de lineas que quiere: "))
 
-F = int(input('Induca el número de filas del triángulo a dibujar: '))
-#F = 5                  # seteo para ahorrarme el input mientras estoy trabajando los ejecicios (comentar antes de entregar)
+for i in range(lineas):
 
-for i in range(F):
-    for j in range(i + 1):
-        print((j + 1), end="")
-    print()
+    for j in range(i+1):
 
-print()
+        print(j+1, end="")
+
+    print("\r")
 
 # Ejercicio 6, ahora en versión piramidal!
 """ 
@@ -150,35 +132,19 @@ print()
     543212345
     Date cuenta que ahora tenemos "espacios blancos" en el lado izquierdo que tenemos que respetar y que en el centro solo hay un número, que si lo haces sin pensar en el centro tendrás siempre 11.
 """
+# Efectivamente lo he mirado pq mucho texto de piramide y poco tiempo
+otraputapiramide = int(input("Introduce las filas: "))
 
-print("====== Ejercicio 6 ======")
-
-F = int(input('Induca el número de filas de la pirámide a dibujar: '))
-#F = 5                  # seteo para ahorrarme el input mientras estoy trabajando los ejecicios (comentar antes de entregar)
-
-izda = []
-
-for i in range(F):
+for i in range(1, otraputapiramide+1):
     
-    cont = 0
-    for k in range(F - 1):
-        if ((F-1)-i) > cont:
-            izda.append(" ")
-            cont += 1
-        else:
-            izda.append(F-k)
-    
-    for ei in izda:
-        print(ei, end="")
+    codigo = ""
 
-    izda.clear()
+    for x in range(i,1,-1):
+        codigo = codigo + str(x)
+    for x in range(1,i+1):
+        codigo = codigo + str(x)
 
-    for j in range(i + 1):
-        print((j + 1), end="")
-
-    print()
-
-print()
+    print(codigo.center((otraputapiramide*2)-1,' '))
 
 # Ejercicio 7, salimos de aquí
 """
@@ -186,19 +152,9 @@ print()
     Todo lo que pongamos será escrito como un eco en la pantalla y solo saldremos del bucle si lo introducido es la palabra "salir"
 """
 
-print("====== Ejercicio 7 ======")
-
-booleano = True
-
-while booleano:
-
-    palabra = input("Escribe una frase o palabra: ")
-
-    palabra = palabra.lower()
-
-    print(palabra)
-
-    if palabra == "salir":
-        booleano = False
-
-print()
+salir = False
+while (salir == False):
+    ayuda = input("Introduce la palabra 'salir' para escapar de aqui: ")
+    ayuda = ayuda.lower()
+    if(ayuda == "salir"):
+        salir = True

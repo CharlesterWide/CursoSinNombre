@@ -1,4 +1,3 @@
-## Ejercicios resueltos por Francisco
 
 # Ejercicio 1, Calcular Pi
 """ 
@@ -10,27 +9,22 @@
     En cada iteración del bucle deberemos comprobar si el iterador (al que llamaremos i), es par o no. Si es par, sumaremos a Pi 4/k, si es impar le restaremos 4/k.
     Una vez sumado o restado, incrementamos k en 2.
     Después de recorrer todo el bucle, muestra por pantalla el Pi obtenido.
+
 """
 
-print("====== Ejercicio 1 ======")
-n = int(input('Dame un número semilla para calcular Pi: '))
-#n = 112             # seteo para ahorrarme el input mientras estoy trabajando los ejecicios (comentar antes de entregar)
-
-n = n * 10000
-
-K = 1
-
+numero = int(input("Introduce el numero: "))
+numero = (numero*100000)
+k = 1
 Pi = 0
 
-for i in range(n):
+for i in range(numero):
     if i%2 == 0:
-        Pi = Pi + 4/K
+        Pi = Pi + (4/k)
     else:
-        Pi = Pi - 4/K
-    K += 2
+        Pi = Pi - (4/k)
+    k = k + 2
 
-print(f"\nLa aproximación al número Pi es: {Pi}\n")
-
+print(f"El resultado de Pi es: {Pi}")
 
 # Ejercicio 2, El área de una circunferencia, la longitud del perímetro y el volumen de la esfera de radio R
 """
@@ -43,26 +37,19 @@ print(f"\nLa aproximación al número Pi es: {Pi}\n")
     Crea un diccionario llamado circunferencia que almacene los cuatro datos, el radio, longitud, área y volumen y lo enseñas por pantalla
 """
 
-print("====== Ejercicio 2 ======")
-R = int(input('Dame radio de la circunferencia: '))
-#R = 5                  # seteo para ahorrarme el input mientras estoy trabajando los ejecicios (comentar antes de entregar)
+radio = int(input("Introduce el radio: "))
+longitud = 2 * Pi * radio
+area = Pi * (radio**2)
+volumen = (4 * (Pi * (radio**3))) / 3
 
-longitud = 2 * Pi * R
-
-area = Pi * R**2
-
-volumen = 4 * ( Pi * R**3 ) / 3
-
-circunferencia = {
-    'radio' : R,
-    'longitud' : longitud,
-    'area' : area,
-    'volumen' : volumen
+Circunferencia = {
+    'Radio' : radio,
+    'Longitud' : longitud,
+    'Area' : area,
+    'Volumen' : volumen
 }
 
-for (clave, valor) in circunferencia.items():
-    print(clave + ":", "{0:.2f}".format(valor))
-print()
+print(Circunferencia)
 
 # Ahora strings y listas
 # Ejercio 3, un correo
@@ -72,27 +59,16 @@ print()
     devuelve una lista con todos los cachos que encuentre separados por el caracter que quieras, luego deberás acceder a las posiciones de la lista para extraer lo que quieres almacenar.
     El diccionario se llamará email y solo contendrá las dos cosas por separado, muestralo por pantalla.
 """
-
-print("====== Ejercicio 3 ======")
-email = {
-    'usuario' : "",
-    'dominio' : ""
+correo = input("Introduce tu email: ")
+cadenas = correo.partition('@')
+usuario = cadenas[0]
+dominio = cadenas[2]
+Email = {
+    'Usuario' : usuario,
+    'Dominio' : dominio
 }
 
-correo = input("\n· Introduce un email \n· (no voy a programar 200 verificaciones de que el correo sea correcto\n asique ajustate al formato ==> usuario@dominio ) : ")
-#correo = "pepe@gmail.com"   # seteo para ahorrarme el input mientras estoy trabajando los ejecicios (comentar antes de entregar)
-
-
-lista = correo.split('@')
-
-i = 0
-for e in email.keys():
-    email[e] = lista[i]
-    i += 1
-
-for (clave, valor) in email.items():
-    print(clave + ":", valor)
-print()
+print(Email)
 
 
 # Ejercicio 4, a una lista
@@ -102,16 +78,15 @@ print()
     Se puede hacer de muchas maneras esto, con funciones ya existentes o con bucles, haz lo que más cómodo veas.
 """
 
-print("====== Ejercicio 4 ======")
-
-caracteres = []
-
-for caracter in email['usuario']:
-    caracteres.append(caracter)
-
-for i,c in enumerate(caracteres):
-    print("[ ", i, "=> ", c, " ]")
-print()
+letra = ''
+usua = ""
+usua2 = ""
+cont = 0
+while cont < len(usuario):
+    usua = usuario[cont] + ", "
+    usua2 = usua2 + usua
+    cont = cont + 1
+print(f"Los caracteres separados del usuario son: {usua2}")
 
 
 # Bucles
@@ -127,17 +102,14 @@ print()
     12345
 """
 
-print("====== Ejercicio 5 ======")
+altura = int(input("Introduce la altura del triangulo: "))
+numeros = ""
+for i in range(1,altura+1):
+    for j in range(1,i+1):
+        numeros = numeros + str(j)
+    numeros = numeros + "\n"
 
-F = int(input('Induca el número de filas del triángulo a dibujar: '))
-#F = 5                  # seteo para ahorrarme el input mientras estoy trabajando los ejecicios (comentar antes de entregar)
-
-for i in range(F):
-    for j in range(i + 1):
-        print((j + 1), end="")
-    print()
-
-print()
+print(numeros)
 
 # Ejercicio 6, ahora en versión piramidal!
 """ 
@@ -151,54 +123,38 @@ print()
     Date cuenta que ahora tenemos "espacios blancos" en el lado izquierdo que tenemos que respetar y que en el centro solo hay un número, que si lo haces sin pensar en el centro tendrás siempre 11.
 """
 
-print("====== Ejercicio 6 ======")
-
-F = int(input('Induca el número de filas de la pirámide a dibujar: '))
-#F = 5                  # seteo para ahorrarme el input mientras estoy trabajando los ejecicios (comentar antes de entregar)
-
-izda = []
-
-for i in range(F):
-    
-    cont = 0
-    for k in range(F - 1):
-        if ((F-1)-i) > cont:
-            izda.append(" ")
-            cont += 1
+lineas = int(input("Introduce la altura de la piramide: "))
+k=0
+cuenta=0
+cuenta2=0
+for i in range(1,lineas+1):
+    for j in range(1,(lineas-i)+1):
+        print(" ",end="")
+        cuenta+=1
+    while k!=((2*i)-1):
+        if cuenta<=lineas-1:
+            print(i+k,end="")
+            cuenta+=1
         else:
-            izda.append(F-k)
-    
-    for ei in izda:
-        print(ei, end="")
-
-    izda.clear()
-
-    for j in range(i + 1):
-        print((j + 1), end="")
-
+            cuenta2+=1
+            print(i+k-(2*cuenta2),end="")
+        k+=1
+    k=cuenta=cuenta2=0
     print()
 
-print()
+
+
 
 # Ejercicio 7, salimos de aquí
 """
     Como último ejercicio, vamos a hacer un bucle que pida por teclado al usuario una frase/palabra. Nos aseguraremos de transformar lo introducido a minusculas.
     Todo lo que pongamos será escrito como un eco en la pantalla y solo saldremos del bucle si lo introducido es la palabra "salir"
 """
-
-print("====== Ejercicio 7 ======")
-
-booleano = True
-
-while booleano:
-
-    palabra = input("Escribe una frase o palabra: ")
-
-    palabra = palabra.lower()
-
-    print(palabra)
-
-    if palabra == "salir":
-        booleano = False
-
-print()
+frase = ""
+while frase!="salir":
+    frase = input("Introduce una frase en mayusculas: ")
+    frase = frase.lower()
+    if frase == "salir":
+        print("Saliendo del programa, adios")
+    else:
+        print(frase)
