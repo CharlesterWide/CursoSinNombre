@@ -4,13 +4,13 @@ Aquí tenéis los puntos que vais ganando (o perdiendo) a lo largo del curso y e
 
 | Alumno | Puntos                           | Total |
 |--------|----------------------------------|-------|
-| Clara  | +                                |      1|
-| Fran   | ++++                             |      4|
+| Clara  | ++                               |      2|
+| Fran   | +++++                            |      5|
 | Irene  | +                                |      1|
 | Javi   | +                                |      1|
 | Jose   | +                                |      1|
 | Laura  | ++                               |      2|
-| Lorena | +                                |      1|
+| Lorena |                                  |      0|
 | Raul   | +                                |      1|
 
 
