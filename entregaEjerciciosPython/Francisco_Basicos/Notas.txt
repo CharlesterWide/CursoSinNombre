@@ -1,0 +1,18 @@
+
+Vamos a crear una funcion para cada ejercicio de basicos.
+
+Arvhivo funciones.
+
+Pasarle como argumento lo que pedimos por teclado.
+
+En lugar de imprimir tiene que devolver lo que ha calculado.
+
+Crear el Main para probarlo.
+
+
+-- Nuevo ejercicio --
+
+Un archivo nuevo con un MAIN, menú encerrado en bucle que pide
+un numero del 1 al 7 para elegir las opciones para lanzar cada
+una de las funciones definidas en el archivos de funciones de 
+la ultima clase.
