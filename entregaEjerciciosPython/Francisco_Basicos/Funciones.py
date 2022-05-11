@@ -45,10 +45,11 @@ def incorporaEmail(correo):
 
     return email
 
-def caracteresDelUsuario(email):
+def stringALista(cadena):
+
     caracteres = []
 
-    for caracter in email['usuario']:
+    for caracter in cadena:
         caracteres.append(caracter)
 
     return caracteres
