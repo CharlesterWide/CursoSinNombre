@@ -116,7 +116,7 @@ if __name__ == "__main__":
     print()
 
     print("====== Ejercicio 4 ======")
-    caracteres = caracteresDelUsuario(email)
+    caracteres = stringALista(email)
     for i,c in enumerate(caracteres):
         print("[ ", i, "=> ", c, " ]")
     print()
