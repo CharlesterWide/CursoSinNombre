@@ -37,13 +37,13 @@ def mostrarCorreo(correo):
 
     return Email
 
-def mostrarCorreoSeparado(usuario):
+def stringALista(frase):
     letra = ''
     usua = ""
     usua2 = ""
     cont = 0
-    while cont < len(usuario):
-        usua = usuario[cont] + ", "
+    while cont < len(frase):
+        usua = frase[cont] + ", "
         usua2 = usua2 + usua
         cont = cont + 1
     return usua2
@@ -56,7 +56,7 @@ def trianguloNumeros(altura):
         numeros = numeros + "\n"
     return numeros
 
-def piramideAsteriscos(numer):
+def piramideNumeros(numer):
     caden = ""
     for fila in range(1,numer + 1):
         for esp in range(1,(numer - fila) + 1):
@@ -78,6 +78,8 @@ def convierteFrase():
         palabra = input("Escribe una palabra: ")
         palabra = palabra.lower()
         print(palabra)
+        if(palabra=="salir"):
+            exit(1)
 
 if __name__ == "__main__":
     print("Ejercicio Pi")
@@ -92,8 +94,9 @@ if __name__ == "__main__":
     correo = input("Introduce tu email: ")
     print(f"Los parametros de su correo son: ",mostrarCorreo(correo))
 
-    print("Ejercicio Email Separado")
-    print(f"Los parametros de su correo son: ",mostrarCorreoSeparado(correo))
+    print("Ejercicio Frase Separada")
+    frase = input("Introduzca su frase: ")
+    print(f"Los parametros de su frase son: ",stringALista(frase))
 
     print("Ejercicio Triangulo")
     altura = int(input("Introduce la altura del triangulo: "))
@@ -101,7 +104,7 @@ if __name__ == "__main__":
 
     print("Piramide de numeros")
     numer = int(input("Introduce la altura del triangulo: "))
-    print(piramideAsteriscos(numer))
+    print(piramideNumeros(numer))
 
     print("Ejercicio Frase")
     convierteFrase()
