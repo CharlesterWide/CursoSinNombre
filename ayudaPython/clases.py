@@ -80,7 +80,7 @@ class Vehiculo:
         self.ruedas = 4
         self.capacidad = 4
     
-    def arranca():
+    def arranca(self):
         print("Bruuummmm dice el coche al arrancar")
 
 class Coche(Vehiculo):                  # Poniendo entre parentesis otra clase estamos heredando de ella todas sus propiedades
@@ -88,7 +88,7 @@ class Coche(Vehiculo):                  # Poniendo entre parentesis otra clase e
     def __init__(self): 
         super().__init__()              # Usando super() podemos invocar a cualquier método de la clase padre
         self.cilindradaMotor = 1200     # Editamos propiedades de la clase padre porque ahora son propiedad de esta clase tambien
-        Vehiculo.arranca()              # De esta forma también podemos acceder a las funciones
+        Vehiculo.arranca(self)              # De esta forma también podemos acceder a las funciones
 
 
 coche = Coche()
@@ -103,7 +103,7 @@ class Clase1:
     def __init__(self):
         print("Soy la clase 1")
     
-    def printClase1():
+    def printClase1(self):
         print("Este es mi print de la clase 1")
 
 class Clase2:
@@ -111,7 +111,7 @@ class Clase2:
     def __init__(self):
         print("Soy la clase 2")
     
-    def printClase2():
+    def printClase2(self):
         print("Este es mi print de la clase 2")
 
 class Clase3(Clase1,Clase2):
@@ -120,5 +120,10 @@ class Clase3(Clase1,Clase2):
         print("Soy la clase 3 y he heredado")
         Clase1.__init__(self)                       # Al igual que antes, hemos accedico a la función especifica de la clase 1
         Clase2.__init__(self)
+    
+    def printClase1(self):                              # Podemos crear funciones con el mismo nombre que hagan cosas diferentes, esto se llama sobrecarga
+        print("Esto es una sobrecarga de la primera clase")
+        Clase1.printClase1(self)                        # No es necesario que se llame a la función original
 
 clase3 = Clase3()
+clase3.printClase1()
