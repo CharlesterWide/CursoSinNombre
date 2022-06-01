@@ -45,10 +45,11 @@ def incorporaEmail(correo):
 
     return email
 
-def caracteresDelUsuario(email):
+def stringALista(cadena):
+
     caracteres = []
 
-    for caracter in email['usuario']:
+    for caracter in cadena:
         caracteres.append(caracter)
 
     return caracteres
@@ -115,7 +116,7 @@ if __name__ == "__main__":
     print()
 
     print("====== Ejercicio 4 ======")
-    caracteres = caracteresDelUsuario(email)
+    caracteres = stringALista(email)
     for i,c in enumerate(caracteres):
         print("[ ", i, "=> ", c, " ]")
     print()
