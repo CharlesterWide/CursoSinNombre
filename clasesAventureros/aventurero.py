@@ -140,14 +140,14 @@ class Aventurero:
 """
 """ 
     Aquí están las clases junto a su asignado
-    Guerrero:
-    Hechicero:
-    Bárbaro:
-    Paladín:
-    Explorador:
-    Pícaro:
-    Tirador:
-    Clerigo:
+    Guerrero:   Raul
+    Hechicero:  Fran
+    Bárbaro:    Lorena
+    Paladín:    Jose
+    Explorador: Irene
+    Pícaro:     Javi
+    Tirador:    Clara
+    Clerigo:    Laura
 """
 
 """ 
@@ -166,7 +166,7 @@ class Aventurero:
     HAY QUE HACER UN MAIN QUE LO PRUEBE TODO 
 """ 
 
-### Gerrero
+### Gerrero ------> Raul
 """ 
     Sus caracteristicas más altas: Fuerza y destreza.
     Podrá usar varias armas, por lo que tendrás que tener una variable (o un diccionario) con todas las armas que tengas (un strign con el nombre, no te compliques mas) y otra variable más que indique que arma estás usando.
@@ -179,7 +179,7 @@ class Aventurero:
     La velocidad es 3 * bonificador de destreza.
 """
 
-### Hechicero
+### Hechicero ------> Fran
 """ 
     Sus características más altas: Inteligencia y sabiduria.
     Solo puede usar un objeto mágico (un báculo, un grimorio, un medallón) como arma.
@@ -191,7 +191,7 @@ class Aventurero:
     La velocidad es 2 * bonificador de destreza.
 """
 
-### Bárbaro
+### Bárbaro ------> Lorena
 """ 
     Sus caracrísticas más altas: Fuerza y constitución.
     Podrá usar varias armas, por lo que tendrás que tener una variable (o un diccionario) con todas las armas que tengas (un strign con el nombre, no te compliques mas) y otra variable más que indique que arma estás usando.
@@ -203,7 +203,7 @@ class Aventurero:
     La velocidad es 2 * bonificador de destreza.
 """
 
-### Paladín
+### Paladín ------> Jose
 """
     Sus características más altas: Constitución y carisma.
     Podrá usar un gran espadon.
@@ -215,7 +215,7 @@ class Aventurero:
     Su velocidad es 2 * el bonificador de destreza.
 """
 
-### Explorador
+### Explorador ------> Irene
 """
     Sus características más altas: Destreza y sabiduría.
     Usará un arco y una gran daga solamente, pudiendo usar ambas a la vez.
@@ -226,7 +226,7 @@ class Aventurero:
     Su velocidad es 4 veces su destreza.
 """
 
-### Pícaro
+### Pícaro ------> Javi
 """ 
     Sus características más altas: Destreza y carisma.
     Usará solo dagas, pero tendrá un segundo inventario con cosas robadas, por lo que podrá robar (una funcion basicamente que meta cosas en ese inventario).
@@ -237,7 +237,7 @@ class Aventurero:
     Su velocidad es 4 veces su destreza.
 """
 
-### Tirador
+### Tirador ------> Clara
 """
     Sus características más altas: Destreza y sabiduría.
     Podrá usar solo armas a distancia.
@@ -249,7 +249,7 @@ class Aventurero:
     Su velocidad es 3 veces su destreza.
 """
 
-### Clérigo
+### Clérigo ------> Laura
 """
     Sus características más altas son: Constitución e inteligencia.
     Solo puede usar un mazo de guerra como arma.
